@@ -9,7 +9,7 @@
     <link href="static/css/twemoji-awesome.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container video">
+    <div class="container video fill" id="home">
       <div class="row">
         <div class="col-md-8">
           <div class="embed-responsive embed-responsive-16by9">
@@ -36,18 +36,31 @@
           </p>
         </div>
       </div>
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">References</a></li> 
-            <li><a href="#">Contact</a></li> 
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#references">References</a></li> 
+            <li><a href="#contact">Contact</a></li> 
           </ul>
         </div>
       </div>
     </nav>
+    <div class="alt-container half-fill" id="about">
+      <div class="container">
+        <h1>About</h1>
+      </div>
+    </div>
+    <div class="container half-fill" id="references">
+      <h1>References</h1>
+    </div>
+    <div class="alt-container half-fill" id="contact">
+      <div class="container">
+        <h1>Contact</h1>
+      </div>
     </div>
   </body>
 </html>
