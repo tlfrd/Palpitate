@@ -7,6 +7,7 @@
     <link href="static/css/styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
     <link href="static/css/twemoji-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container video fill" id="home">
@@ -17,26 +18,35 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="title">Palpitate</div>
-          <div class="slogan">
-            <i class="twa twa-movie-camera"></i>
-            +
-            <i class="twa twa-sound"></i>
-            =
-            <i class="twa twa-heartbeat"></i>
+          <div class="info">
+            <div class="title">Palpitate</div>
+            <div class="slogan">
+              <i class="twa twa-movie-camera"></i>
+              +
+              <i class="twa twa-sound"></i>
+              =
+              <i class="twa twa-heartbeat"></i>
+            </div>
+            </br>
+            <p class="description">
+              We extract key features from audio and video input, apply state-of-the-art machine learning classification and regression techniques to estimate heart rate in real time.
+            </p>
+            </br>
           </div>
           </br>
-          <p class="description">
-            We extract key features from audio and video input, apply state-of-the-art machine learning classification and regression techniques to estimate heart rate in real time.
-          </p>
-          </br>
-          <form action="upload" method="POST" enctype="multipart/form-data">
-            <input type="file" name="file">
-            </br>
-            <input type="submit" value="Upload">
-          </form>
+          <div class="info buttons">
+            <form action="upload" method="POST" enctype="multipart/form-data">
+              <div class="fileInput">
+              <input type="file" name="file">
+              </div>
+              <div class="fileUpload">
+              <input type="submit" value="Upload" class="upload">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
+      </br>
     </div>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -61,6 +71,11 @@
     <div class="alt-container half-fill" id="contact">
       <div class="container">
         <h1>Contact</h1>
+      </div>
+    </div>
+    <div class="bar small-fill">
+      <div class="container">
+        <a href="https://github.com/group-24/Palpitate">Check out our source code<i class="fa fa-github fa-3x"></i></a>
       </div>
     </div>
   </body>
